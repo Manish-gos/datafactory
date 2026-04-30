@@ -8,10 +8,28 @@
 		"json_sink_accountKey": {
 			"value": ""
 		},
+		"AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
 		"HttpServer1_properties_typeProperties_url": {
 			"value": "https://randomuser.me"
 		},
 		"json_sink_properties_typeProperties_url": {
+			"value": "https://dataengineering101398.dfs.core.windows.net/"
+		},
+		"SqlServeronprem_properties_typeProperties_server": {
+			"value": "localhost"
+		},
+		"SqlServeronprem_properties_typeProperties_database": {
+			"value": "AdventureWorksDW2022"
+		},
+		"SqlServeronprem_properties_typeProperties_userName": {
+			"value": "manishgoswami101398"
+		},
+		"AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://ADFKeys101398.vault.azure.net/"
+		},
+		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://dataengineering101398.dfs.core.windows.net/"
 		},
 		"containerUri": {
