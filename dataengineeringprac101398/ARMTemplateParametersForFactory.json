@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "dataengineeringprac101398"
+		},
+		"json_sink_accountKey": {
+			"value": ""
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://randomuser.me"
+		},
+		"json_sink_properties_typeProperties_url": {
+			"value": "https://dataengineering101398.dfs.core.windows.net/"
+		}
+	}
+}
