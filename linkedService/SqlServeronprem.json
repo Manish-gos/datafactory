@@ -6,12 +6,12 @@
 		"type": "SqlServer",
 		"typeProperties": {
 			"server": "localhost",
-			"database": "master",
+			"database": "AdventureWorksDW2022",
 			"encrypt": "optional",
 			"trustServerCertificate": true,
 			"authenticationType": "Windows",
 			"userName": "manishgoswami101398",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjZDc3ZDgzNC1iYWU4LTQ1NzctYjMxYS0xMTBiMDg2YzA2ZDciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlNDYzOTNlMi1lNTQ5LTQ2MjgtYTllYy0wMTAzMDM1Mjk3YTAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "onprem",
