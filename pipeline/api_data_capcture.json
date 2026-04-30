@@ -1,0 +1,26 @@
+{
+	"name": "api_data_capcture",
+	"properties": {
+		"activities": [
+			{
+				"name": "Scrape API DATA",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "GET",
+					"httpRequestTimeout": "00:01:00",
+					"url": "https://randomuser.me/api/"
+				}
+			}
+		],
+		"annotations": []
+	}
+}
