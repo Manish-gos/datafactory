@@ -32,6 +32,15 @@
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://dataengineering101398.dfs.core.windows.net/"
 		},
+		"AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "mani101398.database.windows.net"
+		},
+		"AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "free-sql-db-0926284"
+		},
+		"AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "mani101398"
+		},
 		"containerUri": {
 			"value": ""
 		},
