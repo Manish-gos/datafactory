@@ -1,0 +1,19 @@
+{
+	"name": "destination_json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "json_sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "raw",
+				"fileSystem": "api"
+			}
+		},
+		"schema": {}
+	}
+}
