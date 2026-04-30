@@ -1,0 +1,15 @@
+{
+	"name": "dataengineeringprac101398",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c7e57cec-b936-4ff6-88aa-8f639a32b0d2",
+		"tenantId": "d77e608d-41a0-4ee7-b84e-c3ae171c54a7"
+	}
+}
