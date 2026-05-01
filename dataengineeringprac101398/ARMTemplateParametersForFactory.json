@@ -11,6 +11,9 @@
 		"AzureDataLakeStorage_accountKey": {
 			"value": ""
 		},
+		"AzureDatabricks_accessToken": {
+			"value": ""
+		},
 		"HttpServer1_properties_typeProperties_url": {
 			"value": "https://randomuser.me"
 		},
@@ -40,6 +43,9 @@
 		},
 		"AzureSqlDatabase_properties_typeProperties_userName": {
 			"value": "mani101398"
+		},
+		"AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "0430-181941-56w1pevv"
 		}
 	}
 }
