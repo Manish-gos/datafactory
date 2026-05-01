@@ -149,7 +149,6 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "rawdata.json",
 						"folderPath": "raw",
 						"fileSystem": "api"
 					}
@@ -513,47 +512,6 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/trigge api')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "api_data_capcture",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "ScheduleTrigger",
-				"typeProperties": {
-					"recurrence": {
-						"frequency": "Week",
-						"interval": 2,
-						"startTime": "2026-04-30T08:57:00",
-						"timeZone": "India Standard Time",
-						"schedule": {
-							"minutes": [
-								0
-							],
-							"hours": [
-								12
-							],
-							"weekDays": [
-								"Sunday"
-							]
-						}
-					}
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/api_data_capcture')]"
-			]
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/migrate _db_Azuresql')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
@@ -904,6 +862,37 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/trigger_api')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "api_data_capcture",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Minute",
+						"interval": 1,
+						"startTime": "2026-05-01T06:27:00",
+						"endTime": "2026-05-01T06:27:00",
+						"timeZone": "India Standard Time"
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/api_data_capcture')]"
+			]
 		}
 	]
 }
