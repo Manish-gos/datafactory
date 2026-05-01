@@ -1,0 +1,25 @@
+{
+	"name": "trigger_api",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "api_data_capcture",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2026-05-01T06:27:00",
+				"endTime": "2026-05-01T06:27:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
